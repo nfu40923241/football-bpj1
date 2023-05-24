@@ -1,0 +1,443 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>football</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">football</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='group.html'>group</a><li class='has-children'><a href='Instruction.html'>Instruction</a><ul class='dropdown'><li><a href='Cmd.html'>Cmd</a><li><a href='Git.html'>Git</a></li></ul><li class='has-children'><a href='Notes.html'>Notes</a><ul class='dropdown'><li><a href='acp時可用詞彙.html'>acp時可用詞彙</a></li></ul><li class='has-children'><a href='pj1.html'>pj1</a><ul class='dropdown'><li><a href='bg1.html'>bg1</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Instruction.html'>Next</a> >> Instruction<br /><h1>group</h1>
+<table width="128">
+<tbody>
+<tr>
+<td width="64"><a href="https://github.com/nfu40723217/football-bpj1">40723217</a></td>
+<td width="64"><a href="https://nfu40723217.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/a40732331/football-bpj1">40732331</a></td>
+<td><a href="https://a40732331.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/jason60714/football-bpj1">40923115</a></td>
+<td><a href="https://jason60714.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Martin3130/football-bpj1">40923130</a></td>
+<td><a href="https://Martin3130.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nfu40923219/football-bpj1">40923219</a></td>
+<td><a href="https://nfu40923219.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nfu40923225/football-bpj1">40923225</a></td>
+<td><a href="https://nfu40923225.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/40923235/football-bpj1">40923235</a></td>
+<td><a href="https://40923235.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/nfu40923241/football-bpj1">40923241</a></td>
+<td><a href="https://nfu40923241.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/40923246/football-bpj1">40923246</a></td>
+<td><a href="https://40923246.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/40971219/football-bpj1">40971219</a></td>
+<td><a href="https://40971219.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/40971220/football-bpj1">40971220</a></td>
+<td><a href="https://40971220.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ruoqinz0421/football-bpj1">41023201</a></td>
+<td><a href="https://ruoqinz0421.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ting0111/football-bpj1">41023202</a></td>
+<td><a href="https://ting0111.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/SHIUN129/football-bpj1">41023203</a></td>
+<td><a href="https://SHIUN129.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/04yxuan%20pj1bg8/football-bpj1">41023204</a></td>
+<td><a href="https://04yxuan%20pj1bg8.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/c-ching%20pj1bg8/football-bpj1">41023205</a></td>
+<td><a href="https://c-ching%20pj1bg8.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tseYU000/football-bpj1">41023206</a></td>
+<td><a href="https://tseYU000.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/chiiip333/football-bpj1">41023207</a></td>
+<td><a href="https://chiiip333.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ziyi8%20%20%20pj1bg1/football-bpj1">41023208</a></td>
+<td><a href="https://ziyi8%20%20%20pj1bg1.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/junpig10/football-bpj1">41023210</a></td>
+<td><a href="https://junpig10.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/football-bpj1">41023211</a></td>
+<td><a href="https://.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yonqui0411/football-bpj1">41023212</a></td>
+<td><a href="https://yonqui0411.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023213/football-bpj1">41023213</a></td>
+<td><a href="https://41023213.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023215/football-bpj1">41023215</a></td>
+<td><a href="https://41023215.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023216/football-bpj1">41023216</a></td>
+<td><a href="https://41023216.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023217/football-bpj1">41023217</a></td>
+<td><a href="https://41023217.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/snowfall-killer/football-bpj1">41023218</a></td>
+<td><a href="https://snowfall-killer.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/gu811%20%20%20pj1bg5/football-bpj1">41023219</a></td>
+<td><a href="https://gu811%20%20%20pj1bg5.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023220/football-bpj1">41023220</a></td>
+<td><a href="https://41023220.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023221/football-bpj1">41023221</a></td>
+<td><a href="https://41023221.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/kolas911205/football-bpj1">41023222</a></td>
+<td><a href="https://kolas911205.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023224/football-bpj1">41023224</a></td>
+<td><a href="https://41023224.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/xiaomantou0411/football-bpj1">41023225</a></td>
+<td><a href="https://xiaomantou0411.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023226/football-bpj1">41023226</a></td>
+<td><a href="https://41023226.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/RWE1116%20pj1bg22/football-bpj1">41023228</a></td>
+<td><a href="https://RWE1116%20pj1bg22.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/CHI1020%20pj1bg18/football-bpj1">41023229</a></td>
+<td><a href="https://CHI1020%20pj1bg18.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023230/football-bpj1">41023230</a></td>
+<td><a href="https://41023230.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhan-uj%20pj1bg29/football-bpj1">41023231</a></td>
+<td><a href="https://zhan-uj%20pj1bg29.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Yun4%20%20%20%20pj1bg30/football-bpj1">41023232</a></td>
+<td><a href="https://Yun4%20%20%20%20pj1bg30.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Anguss676/football-bpj1">41023233</a></td>
+<td><a href="https://Anguss676.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Maskie-Razzio/football-bpj1">41023234</a></td>
+<td><a href="https://Maskie-Razzio.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Bored1236/football-bpj1">41023236</a></td>
+<td><a href="https://Bored1236.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/www000123/football-bpj1">41023237</a></td>
+<td><a href="https://www000123.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023238/football-bpj1">41023238</a></td>
+<td><a href="https://41023238.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/a92826%20%20pj1bg8/football-bpj1">41023239</a></td>
+<td><a href="https://a92826%20%20pj1bg8.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/YHY30678/football-bpj1">41023240</a></td>
+<td><a href="https://YHY30678.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Yao-Hsien4102324/football-bpj1">41023241</a></td>
+<td><a href="https://Yao-Hsien4102324.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023242/football-bpj1">41023242</a></td>
+<td><a href="https://41023242.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/football-bpj1">41023243</a></td>
+<td><a href="https://.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/football-bpj1">41023244</a></td>
+<td><a href="https://.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023245/football-bpj1">41023245</a></td>
+<td><a href="https://41023245.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/yuchen1031/football-bpj1">41023246</a></td>
+<td><a href="https://yuchen1031.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023247/football-bpj1">41023247</a></td>
+<td><a href="https://41023247.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/smart-777/football-bpj1">41023248</a></td>
+<td><a href="https://smart-777.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/BrianTsai071/football-bpj1">41023249</a></td>
+<td><a href="https://BrianTsai071.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/football-bpj1">41023250</a></td>
+<td><a href="https://.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sdegbsvrtg/football-bpj1">41023251</a></td>
+<td><a href="https://sdegbsvrtg.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ZYC0923%20pj1bg23/football-bpj1">41023252</a></td>
+<td><a href="https://ZYC0923%20pj1bg23.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/Tzm0306%20pj1bg10/football-bpj1">41023253</a></td>
+<td><a href="https://Tzm0306%20pj1bg10.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/41023254/football-bpj1">41023254</a></td>
+<td><a href="https://41023254.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/A41023255/football-bpj1">41023255</a></td>
+<td><a href="https://A41023255.github.io/football-bpj1/content/index.html">(repo)</a></td>
+</tr>
+</tbody>
+</table>
+<br />About << <a href='About.html'>Previous</a> <a href='Instruction.html'>Next</a> >> Instruction</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
